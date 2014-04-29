@@ -1,7 +1,11 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
+#include "BuilderTest.h"
+#include "cocos-ext.h"
+
 USING_NS_CC;
+USING_NS_CC_EXT;
 
 AppDelegate::AppDelegate() {
 
@@ -25,10 +29,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
-
+    // CCScene *pScene = HelloWorld::scene();
+    
+    CCNodeLoaderLibrary *ccNodeLoaderLibrary = CCNodeLoaderLibrary::sharedCCNodeLoaderLibrary();
+    ccNodeLoaderLibrary->registerCCNodeLoader("BuilderTest", BuilderTestLoader::loader());
+    
+    CCBReader * ccbReader = new CCBReader(ccNodeLoaderLibrary);
+    CCScene *scene = ccbReader->createSceneWithNodeGraphFromFile("ccbi_files/RETop.ccbi");
+    pDirector->getTouchDispatcher();
+    pDirector->runWithScene(scene);
+    
+    
     // run
-    pDirector->runWithScene(pScene);
+    // pDirector->runWithScene(pScene);
 
     return true;
 }
