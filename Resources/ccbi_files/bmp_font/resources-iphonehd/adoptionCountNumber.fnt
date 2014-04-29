@@ -1,0 +1,16 @@
+fo face="" size=0 bold=0 italic=0 charset="" unicode=0 stretchH=200 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=100 base=0 scaleW=20 scaleH=200 pages=1 packed=0
+page id=0 file="countNumber.png"
+
+chars count=10
+char id=48  x=1    y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=80    page=0  chnl=0   // 0
+char id=49  x=106   y=200 width=100     height=100      xoffset=0     yoffset=0    xadvance=70     page=0  chnl=0   // 1
+char id=50  x=200  y=200 width=100     height=100      xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 2
+char id=51  x=300  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 3
+char id=52  x=400  y=200 width=100     height=100      xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 4
+char id=53  x=504  y=200 width=100     height=100      xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 5
+char id=54  x=600  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=86     page=0  chnl=0   // 6
+char id=55  x=704  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 7
+char id=56  x=800  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=84     page=0  chnl=0   // 8
+char id=57  x=902  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // 9
+char id=58  x=1014  y=200 width=100     height=100     xoffset=0     yoffset=0    xadvance=80     page=0  chnl=0   // :
